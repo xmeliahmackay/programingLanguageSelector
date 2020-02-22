@@ -6,4 +6,5 @@ h1 {
 }
 #ruby, #cSharp, #python {
   display: none;
+  text-align: center;
 }
