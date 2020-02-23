@@ -1,27 +1,28 @@
-
-
-
 $(document).ready(function(){
   $("form#quiz").submit(function(event) {
-    var qOne = parseInt($("#music").val());
+    var qOne = parseInt($("#effort").val());
     var qTwo = parseInt($("#math").val());
-    var qThree = parseInt($("#vacay").val());
+    var qThree = parseInt($("#why").val());
     var qFour = parseInt($("#race").val());
     var qFive = parseInt($("#jb").val());
     var nameInput = $("input#name").val();
-    var score = qOne + qTwo + qThree + qFour + qFive; 
-    //alert(score);
+    var answer = qOne + qTwo + qThree + qFour + qFive; 
+    $(".javaScrptClick").click(function () {
+      $(".jsDescription").toggle();
+    });
+    $(".pythonClick").click(function () {
+      $(".pythonDescription").toggle();
+    });
 
     $(".name").append(nameInput);
 
-    if (score >= 5 && score <= 10) {
-      $("#ruby").toggle();
-    } else if (score >= 10 && score <= 17) {
+    if (answer >= 5 && answer <= 10) {
+      $("#javaScrpt").toggle();
+    } else if (answer >= 10 && answer <= 17) {
       $("#cSharp").toggle();
-    } else if (score >= 17) {
+    } else if (answer >= 17) {
       $("#python").toggle();
     }
-    
 
     event.preventDefault();
   });

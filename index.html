@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
   <head>  
-    <title>Language Selector</title>
+    <title>Programming Languge Quiz</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
@@ -9,78 +9,76 @@
   </head>
   <body>
     <div class="containter">
-      <div class="row">
-        <div class="col-md-9">
-          <h1>Which Programing Languge should you learn?</h1>
-          <form id="quiz">
-            <label for="name" class="question">What is your name?</label>
-            <input id="name" class="form-control" type="text">
-           
-            <h4>What is your favorite music genre</h4>
-            <select class="form-control" id="music">
-              <option value="1">Alternative</option>
-              <option value="2">Pop</option>
-              <option value="3">EDM</option>
-              <option value="4">Rock N Roll</option>
-              <option value="5">Classical</option>
-            </select>
-            <h4>What is 1 + 1</h4>
-            <select class="form-control" id="math">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">not this one</option>
-              <option value="4">still not this one</option>
-              <option value="5">you've gone too far</option>
-            </select>
-            <h4>What's your favorite vacation spot</h4>
-            <select class="form-control" id="vacay">
-              <option value="1">Los Angeles</option>
-              <option value="2">Tel Aviv</option>
-              <option value="3">The Alps</option>
-              <option value="4">Vegas Baby</option>
-              <option value="5">Greek Islands</option>
-            </select>
-            <h4>What's your favorite vacation spot</h4>
-            <select class="form-control" id="vacay">
-              <option value="1">Los Angeles</option>
-              <option value="2">Tel Aviv</option>
-              <option value="3">The Alps</option>
-              <option value="4">Vegas Baby</option>
-              <option value="5">Greek Islands</option>
-            </select>
-            <h4>You're 3rd place right now in a race. What place are you in when you pass the person in 2nd place?</h4>
-            <select class="form-control" id="race">
-              <option value="1">1st Place</option>
-              <option value="2">2nd Place</option>
-              <option value="3">3rd Place</option>
-              <option value="4">Banana</option>
-              <option value="5">Lol I don't race</option>
-            </select>
-            <h4>Logic Question:</h4>
-            <h5>If Justin Beiber is thrown horizontally at 10.0 m/s from the top of a cliff thats 122.5 m high. How long does it take for him to reach the groun?</h5>
-            <select class="form-control" id="jb">
-              <option value="1">5 mins</option>
-              <option value="2">9.347 mins</option>
-              <option value="3">Who cares lol</option>
-              <option value="4">Not fast enough</option>
-              <option value="5">3 days</option>
-            </select>
-        
+      <div class="page">
+        <div class="row">
+          <div class="col-md-2 col-sm-2"></div>
+          <div class="col-md-8 col-sm-8 question">
+            <h1>Which Programing Languge should you learn?</h1>
+            <form id="quiz">
+              <label for="name" class="question">What is your name?</label>
+              <input id="name" class="form-control" type="text">
+            
+              <h4>How hard would you say you work?</h4>
+              <select class="form-control" id="effort">
+                <option value="1">Really Hard</option>
+                <option value="2">I try my best</option>
+                <option value="3">Eh depends on the mood</option>
+                <option value="4">It's rough</option>
+                <option value="5">I like turtles</option>
+              </select>
+              <h4>What is 1 + 1</h4>
+              <select class="form-control" id="math">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">not this one</option>
+                <option value="4">still not this one</option>
+                <option value="5">you've gone too far</option>
+              </select>
+              <h4>What's do you want to do with your code?</h4>
+              <select class="form-control" id="why">
+                <option value="1">Make Interactive Websites</option>
+                <option value="2">Dealin' with Data</option>
+                <option value="3">Create Apps for Phones</option>
+                <option value="4">Make things go boom</option>
+                <option value="5">Whatever pays the best</option>
+              </select>
+              <h4>You're 3rd place right now in a race. What place are you in when you pass the person in 2nd place?</h4>
+              <select class="form-control" id="race">
+                <option value="1">1st Place</option>
+                <option value="2">2nd Place</option>
+                <option value="3">3rd Place</option>
+                <option value="4">Banana</option>
+                <option value="5">Lol I don't race</option>
+              </select>
+              <h4>Logic Question:</h4>
+              <h5>If Justin Beiber is thrown horizontally at 10.0 m/s from the top of a cliff thats 122.5 m high. How long does it take for him to reach the groun?</h5>
+              <select class="form-control" id="jb">
+                <option value="1">5 mins</option>
+                <option value="2">9.347 mins</option>
+                <option value="3">Who cares lol</option>
+                <option value="4">Not fast enough</option>
+                <option value="5">3 days</option>
+              </select>
+          
 
-            <button type="submit" class="btn  btn-warning btn-block">Submit!</button>
-          </form>
-          <div id="ruby">
-            <h3><span class="name"></span> you should learn <i>RUBY</i></h3>
-          </div>
-          <div id="cSharp">
-            <h3><span class="name"></span> you should learn <i>C#</i></h3>
-          </div>
-          <div id="python">
-            <h3><span class="name"></span> you should learn <i>Python</i></h3>
+              <button type="submit" class="btn  btn-primary btn-block">Submit!</button>
+            </form>
+            <div id="javaScrpt">
+              <h3><span class="name"></span> you should learn <i>JavaScript</i></h3>
+              <h5 class="javaScrptClick">But what's that? Click Me!</h5>
+              <p class="jsDescription">To put things simply, JavaScript is an object orient programming language designed to make web development easier and more attractive. In most cases, JavaScript is used to create responsive, interactive elements for web pages, enhancing the user experience.</p>
+            </div>
+            <div id="cSharp">
+              <h3><span class="name"></span> you should learn <i>C#</i></h3>
+            </div>
+            <div id="python">
+              <h3><span class="name"></span> you should learn <i>Python</i></h3>
+              <h5 class="pythonClick">But what's that? Click Me!</h5>
+              <p class="pythonDescription">Python is one of the most loved programming languages by developers, data scientists, software engineers, and even hackers because of its versatility, flexibility, and object-oriented features. ... Although it's a high-level language and can do complex tasks, Python is easy to learn and has a clean syntax.</p>
+            </div>
           </div>
         </div>
       </div>
-
 
 
 
