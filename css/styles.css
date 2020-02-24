@@ -21,10 +21,14 @@ body {
   /*background-color: rgb(254, 255, 215);*/
   background-image: repeating-linear-gradient(#E086D3, #8332AC);
 }
+.otherBackground{
+  background-image: repeating-linear-gradient(rgb(63, 9, 55), rgb(195, 152, 216));
+}
 .question {
   background-color: rgb(255, 255, 255);
   margin: 10px;
   padding:10px;
+  border-radius: 25px;
 }
 html {
   height: 100%;

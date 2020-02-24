@@ -7,8 +7,11 @@ $(document).ready(function(){
     var qFive = parseInt($("#jb").val());
     var nameInput = $("input#name").val();
     var answer = qOne + qTwo + qThree + qFour + qFive; 
+    $("button#colorMode").click(function() {
+      $("body").addClass("otherBackground");
+    });
     $(".javaScrptClick").click(function () {
-      $(".jsDescription").toggle();
+      $(".jsDescription").fadeIn();
     });
     $(".pythonClick").click(function () {
       $(".pythonDescription").toggle();
