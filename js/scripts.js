@@ -16,9 +16,7 @@ $(document).ready(function(){
     $(".pythonClick").click(function () {
       $(".pythonDescription").toggle();
     });
-
     $(".name").append(nameInput);
-
     if (answer >= 5 && answer <= 10) {
       $("#javaScrpt").toggle();
     } else if (answer >= 10 && answer <= 17) {
@@ -26,7 +24,6 @@ $(document).ready(function(){
     } else if (answer >= 17) {
       $("#python").toggle();
     }
-
     event.preventDefault();
   });
 });
